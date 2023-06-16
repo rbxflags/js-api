@@ -1,6 +1,6 @@
 {
   "name": "rfo.js",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "RFO API Implementation in NodeJS",
   "main": "index.js",
   "scripts": {

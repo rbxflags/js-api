@@ -1,0 +1,30 @@
+{
+  "name": "rfojs",
+  "version": "0.1.0",
+  "description": "RFO API Implementation in NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "prepublish": "pnpm build",
+    "mkdocs": "typedoc src/*"
+  },
+  "keywords": [],
+  "author": "Expo",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@types/node": "^20.3.1",
+    "@types/prompts": "^2.4.4",
+    "rollup": "^3.25.1",
+    "tslib": "^2.5.3",
+    "typedoc": "^0.24.8"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "json5": "^2.2.3",
+    "node-fetch": "^3.3.1",
+    "prompts": "^2.4.2",
+    "toml": "^3.0.0"
+  }
+}

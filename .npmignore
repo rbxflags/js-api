@@ -1,0 +1,7 @@
+_cache
+node_modules
+src
+docs
+rollup.config.mjs
+pnpm-lock.yaml
+tsconfig.json

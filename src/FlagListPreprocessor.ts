@@ -188,7 +188,6 @@ export class FlagListPreprocessor {
           name: 'Default Flags',
           url: 'https://raw.githubusercontent.com/rbxflags/Flags/main/flaglists.json5',
         },
-        updater: 'https://rfo.sh/updater/updater.json5',
       },
     };
     const configData = existsSync(configFile) ? json5.parse(readFileSync(configFile, 'utf-8')) : {};

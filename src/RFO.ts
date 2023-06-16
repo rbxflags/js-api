@@ -12,7 +12,7 @@ import json5 from 'json5';
   * await rfo.preprocessFlags(true, [
   *   // you can put additional flag files not on disk here
   * ], true);
-  * // You should modify .enabled properties in RFO.processedFlagList here
+  * // You should modify .enabled properties in rfo.processedFlagList here
   * // Find Roblox Versions - You can also directly assign to rfo.versions if you want to have your own roblox version searcher
   * await rfo.findRoblox();
   * // Apply Flags
@@ -39,6 +39,10 @@ export class RFO {
     * Roblox Versions - assigned by findRoblox()
     */
   public robloxPaths: string[] = [];
+  /**
+    * Flag Overwrites
+    */
+  public flagOverwrites: Record<string, any> = {};
   /**
     * Preprocess Flags
     * @example ```ts
@@ -98,6 +102,7 @@ export class RFO {
       if (!existsSync(flagFile)) throw new Error('Flag file does not exist: ' + flagFile);
       merged[flagFile] = (json5.parse(readFileSync(flagFile, 'utf8')))
     }
+    merged.overwrites = this.flagOverwrites;
     return merged;
   }
   /** Merges all flag files from getFlagFiles */
@@ -107,7 +112,8 @@ export class RFO {
       if (!existsSync(flagFile)) throw new Error('Flag file does not exist: ' + flagFile);
       merged = {
         ...merged,
-        ...json5.parse(readFileSync(flagFile, 'utf8'))
+        ...json5.parse(readFileSync(flagFile, 'utf8')),
+        ...this.flagOverwrites,
       }
     }
     return merged;

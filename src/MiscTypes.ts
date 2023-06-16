@@ -80,7 +80,5 @@ export type Config = {
       /** URL */
       url: string,
     },
-    /** Updater */
-    updater: string,
   },
 };

@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
     "prepublish": "pnpm build",
-    "mkdocs": "typedoc src/*"
+    "mkdocs": "typedoc src/* --options typedoc.json"
   },
   "keywords": [],
   "author": "Expo",

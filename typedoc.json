@@ -1,0 +1,17 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": [
+    "./src/RFO.ts"
+  ],
+  "out": "docs",
+  "entryPointStrategy": "expand",
+  "theme": "default",
+  "cname": "rfo.sh",
+  "cacheBust": true,
+  "hideGenerator": true,
+  "titleLink": "https://js-api.rfo.sh",
+  "navigationLinks": {
+    "RFO": "http://rfo.sh",
+    "Discord": "https://dc.rfo.sh",
+  }
+}

@@ -3,7 +3,7 @@
 Example Usage:
 
 ```ts
-import { RFO } from 'rfojs';
+import { RFO } from 'rfo.js';
 
 (async () => {
   const rfo = new RFO();

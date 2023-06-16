@@ -9,7 +9,7 @@
   "cname": "rfo.sh",
   "cacheBust": true,
   "hideGenerator": true,
-  "titleLink": "https://js-api.rfo.sh",
+  "titleLink": "https://js-api.rfo.sh/docs/",
   "navigationLinks": {
     "RFO": "http://rfo.sh",
     "Discord": "https://dc.rfo.sh",

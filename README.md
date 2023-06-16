@@ -1,6 +1,9 @@
 # RFO-JS API
 
-Example Usage:
+## Documentation
+[Here](https://js-api.rfo.sh/docs/classes/RFO.RFO.html)
+
+## Example Usage
 
 ```ts
 import { RFO } from 'rfo.js';

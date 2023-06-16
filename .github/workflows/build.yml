@@ -41,7 +41,7 @@ jobs:
       - name: Remove Unnecessary Files
         run: rm -rf node_modules .github .gitignore .npmignore pnpm-lock.yaml package-lock.json rollup.config.mjs tsconfig.json typedoc.json RobloxTest
       - name: Create Indexes
-        uses: Exponential-Workload/create-index-action@0.1.0
+        uses: Exponential-Workload/create-index-action@master
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
